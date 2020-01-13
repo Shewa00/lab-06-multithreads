@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.com/ARAOvsepyan/lab-06-multithreads.svg?branch=master)](https://travis-ci.com/ARAOvsepyan/lab-06-multithreads)
-[forthebadge](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)](https://forthebadge.com)
 # Лабораторная работа №6
 
 ## Задание
