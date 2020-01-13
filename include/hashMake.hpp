@@ -6,7 +6,7 @@
 #include <string>
 #include <thread>
 
-static const char endOfHash[] = "0000";
+static const std::string endOfHash = "0000";
 
 class Hash
 {
