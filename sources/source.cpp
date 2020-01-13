@@ -9,15 +9,14 @@
 
 int main(int argc, char* argv[])
 {
-    srand(time(nullptr));                // иниц рандом
-    boost::log::add_file_log("Result.log"); // создаем файл, куда будем выгружаем
+    srand(time(nullptr));
+    boost::log::add_file_log("Result.log");
     boost::log::add_console_log(std::cout);
-    size_t countOfThreads = 0; // количество потоков
+    size_t countOfThreads = 0;
     if (argc < 2) {
-        countOfThreads = std::thread::hardware_concurrency(); // макс количество потоков, которые можно обрабатывать
-    }
-    else {
-        countOfThreads = boost::lexical_cast<size_t>(argv[1]); // принимаем 1е значение
+        countOfThreads = std::thread::hardware_concurrency();
+    } else {
+        countOfThreads = boost::lexical_cast<size_t>(argv[1]);
     }
 
     std::vector<std::thread> threads;
