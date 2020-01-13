@@ -20,13 +20,11 @@ public:
 
             if (hashOfRandString.substr(hashOfRandString.size() -
             endOfHash.size()) == endOfHash) {
-
                 BOOST_LOG_TRIVIAL(info)
                     << "Found correct value '" << randStringHash
                     << "' with hash '" << hashOfRandString
                     << "'";
-            }
-            else {
+            } else {
                 BOOST_LOG_TRIVIAL(trace)
                     << "Thread with ID: " << std::this_thread::get_id()
                     << " uncorrect value '" << randStringHash
