@@ -1,0 +1,805 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/macbook/lab-06-multithreads
+-- The C compiler identification is AppleClang 10.0.1.10010046
+-- The CXX compiler identification is AppleClang 10.0.1.10010046
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- [hunter] Calculating Toolchain-SHA1
+-- [hunter] Calculating Config-SHA1
+-- [hunter] HUNTER_ROOT: /Users/macbook/.hunter
+-- [hunter] [ Hunter-ID: 9a3594a | Toolchain-ID: 7e73122 | Config-ID: c351cc1 ]
+-- [hunter] BOOST_ROOT: /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Install (ver.: 1.70.0-p0)
+-- [hunter] BOOST_ROOT: /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Install (ver.: 1.70.0-p0)
+-- [hunter] BOOST_ROOT: /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Install (ver.: 1.70.0-p0)
+-- [hunter] Building Boost (component: log)
+loading initial cache file /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/cache.cmake
+loading initial cache file /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Build/Boost/__log/args.cmake
+-- The C compiler identification is AppleClang 10.0.1.10010046
+-- The CXX compiler identification is AppleClang 10.0.1.10010046
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -- works
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -- works
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Build/Boost/__log/Build
+Scanning dependencies of target Boost-log
+[ 12%] Creating directories for 'Boost-log'
+[ 25%] Performing download step (download, verify and extract) for 'Boost-log'
+-- verifying file...
+       file='/Users/macbook/.hunter/_Base/Download/Boost/1.70.0-p0/e6bb97b/v1.70.0-p0.tar.gz'
+-- File already exists and hash match (skip download):
+  file='/Users/macbook/.hunter/_Base/Download/Boost/1.70.0-p0/e6bb97b/v1.70.0-p0.tar.gz'
+  SHA1='e6bb97b5109c7c15ea459cf2b1a9d52cbf88a89e'
+-- extracting...
+     src='/Users/macbook/.hunter/_Base/Download/Boost/1.70.0-p0/e6bb97b/v1.70.0-p0.tar.gz'
+     dst='/Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Build/Boost/__log/Source'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 37%] No patch step for 'Boost-log'
+[ 50%] Performing update step for 'Boost-log'
+[ 62%] Performing configure step for 'Boost-log'
+Dummy patch command
+Building Boost.Build engine with toolset darwin... tools/build/src/engine/bin.macosxx86_64/b2
+Detecting Python version... 2.7
+Detecting Python root... /System/Library/Frameworks/Python.framework/Versions/2.7
+Unicode/ICU support for Boost.Regex?... not found.
+Generating Boost.Build configuration in project-config.jam for darwin...
+
+Bootstrapping is done. To build, run:
+
+    ./b2
+    
+To generate header files, run:
+
+    ./b2 headers
+
+To adjust configuration, edit 'project-config.jam'.
+Further information:
+
+   - Command line help:
+     ./b2 --help
+     
+   - Getting started guide: 
+     http://www.boost.org/more/getting_started/unix-variants.html
+     
+   - Boost.Build documentation:
+     http://www.boost.org/build/
+
+[ 75%] Performing build step for 'Boost-log'
+Performing configuration checks
+
+    - default address-model    : 64-bit
+    - default architecture     : x86
+
+Building the Boost C++ Libraries.
+
+
+    - native-atomic-int32-supported : yes
+    - native-syslog-supported  : yes
+    - pthread-supports-robust-mutexes : no
+    - has_icu builds           : no
+    - lockfree boost::atomic_flag : yes
+    - compiler-supports-ssse3  : yes
+    - compiler-supports-avx2   : no
+
+Component configuration:
+
+    - atomic                   : not building
+    - chrono                   : not building
+    - container                : not building
+    - context                  : not building
+    - contract                 : not building
+    - coroutine                : not building
+    - date_time                : not building
+    - exception                : not building
+    - fiber                    : not building
+    - filesystem               : not building
+    - graph                    : not building
+    - graph_parallel           : not building
+    - headers                  : not building
+    - iostreams                : not building
+    - locale                   : not building
+    - log                      : building
+    - math                     : not building
+    - mpi                      : not building
+    - program_options          : not building
+    - python                   : not building
+    - random                   : not building
+    - regex                    : not building
+    - serialization            : not building
+    - stacktrace               : not building
+    - system                   : not building
+    - test                     : not building
+    - thread                   : not building
+    - timer                    : not building
+    - type_erasure             : not building
+    - wave                     : not building
+
+...patience...
+...patience...
+...patience...
+...found 5456 targets...
+...updating 288 targets...
+darwin.compile.c++ bin.v2/libs/atomic/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/lockpool.o
+darwin.compile.c++ bin.v2/libs/atomic/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/lockpool.o
+darwin.archive bin.v2/libs/atomic/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/libboost_atomic-mt-d-x64.a
+darwin.archive bin.v2/libs/atomic/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/libboost_atomic-mt-x64.a
+common.copy /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Build/Boost/__log/Source/stage/lib/libboost_atomic-mt-x64.a
+common.copy /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Build/Boost/__log/Source/stage/lib/libboost_atomic-mt-d-x64.a
+darwin.compile.c++ bin.v2/libs/date_time/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/gregorian/greg_weekday.o
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/codecvt_error_category.o
+darwin.compile.c++ bin.v2/libs/date_time/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/gregorian/date_generators.o
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/c_regex_traits.o
+darwin.compile.c++ bin.v2/libs/chrono/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/chrono.o
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/path_traits.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/attribute_name.o
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/windows_file_codecvt.o
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/portability.o
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/path.o
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/unique_path.o
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/operations.o
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/utf8_codecvt_facet.o
+darwin.archive bin.v2/libs/filesystem/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/libboost_filesystem-mt-d-x64.a
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: bin.v2/libs/filesystem/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/windows_file_codecvt.o has no symbols
+common.copy /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Build/Boost/__log/Source/stage/lib/libboost_filesystem-mt-d-x64.a
+darwin.compile.c++ bin.v2/libs/date_time/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/gregorian/greg_month.o
+darwin.archive bin.v2/libs/date_time/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/libboost_date_time-mt-d-x64.a
+common.copy /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Build/Boost/__log/Source/stage/lib/libboost_date_time-mt-d-x64.a
+darwin.compile.c++ bin.v2/libs/chrono/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/thread_clock.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/attribute_set.o
+darwin.compile.c++ bin.v2/libs/chrono/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/process_cpu_clocks.o
+darwin.archive bin.v2/libs/chrono/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/libboost_chrono-mt-d-x64.a
+common.copy /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Build/Boost/__log/Source/stage/lib/libboost_chrono-mt-d-x64.a
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/code_conversion.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/attribute_value_set.o
+darwin.compile.c++ bin.v2/libs/thread/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/pthread/thread.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/named_scope.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/process_id.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/global_logger_storage.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/process_name.o
+...on 100th target...
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/severity_level.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/default_attribute_names.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/thread_id.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/timer.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/text_ostream_backend.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/once_block.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/exceptions.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/record_ostream.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/thread_specific.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/text_multifile_backend.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/timestamp.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/threadsafe_queue.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/core.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/event.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/permissions.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/trivial.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/default_sink.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/dump.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/dump_ssse3.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/posix/ipc_reliable_message_queue.o
+libs/log/src/posix/ipc_reliable_message_queue.cpp:160:13: warning: offset of on non-POD type 'boost::log::v2s_mt_posix::ipc::reliable_message_queue::implementation::header' [-Winvalid-offsetof]
+            BOOST_LOG_MIX_HEADER_MEMBER(m_abi_tag);
+            ^                           ~~~~~~~~~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:158:46: note: expanded from macro 'BOOST_LOG_MIX_HEADER_MEMBER'
+            hash.mix(static_cast< uint32_t >(offsetof(header, name)))
+                                             ^                ~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/stddef.h:120:24: note: expanded from macro 'offsetof'
+#define offsetof(t, d) __builtin_offsetof(t, d)
+                       ^                     ~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:161:13: warning: offset of on non-POD type 'boost::log::v2s_mt_posix::ipc::reliable_message_queue::implementation::header' [-Winvalid-offsetof]
+            BOOST_LOG_MIX_HEADER_MEMBER(m_padding);
+            ^                           ~~~~~~~~~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:158:46: note: expanded from macro 'BOOST_LOG_MIX_HEADER_MEMBER'
+            hash.mix(static_cast< uint32_t >(offsetof(header, name)))
+                                             ^                ~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/stddef.h:120:24: note: expanded from macro 'offsetof'
+#define offsetof(t, d) __builtin_offsetof(t, d)
+                       ^                     ~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:162:13: warning: offset of on non-POD type 'boost::log::v2s_mt_posix::ipc::reliable_message_queue::implementation::header' [-Winvalid-offsetof]
+            BOOST_LOG_MIX_HEADER_MEMBER(m_ref_count);
+            ^                           ~~~~~~~~~~~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:158:46: note: expanded from macro 'BOOST_LOG_MIX_HEADER_MEMBER'
+            hash.mix(static_cast< uint32_t >(offsetof(header, name)))
+                                             ^                ~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/stddef.h:120:24: note: expanded from macro 'offsetof'
+#define offsetof(t, d) __builtin_offsetof(t, d)
+                       ^                     ~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:163:13: warning: offset of on non-POD type 'boost::log::v2s_mt_posix::ipc::reliable_message_queue::implementation::header' [-Winvalid-offsetof]
+            BOOST_LOG_MIX_HEADER_MEMBER(m_capacity);
+            ^                           ~~~~~~~~~~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:158:46: note: expanded from macro 'BOOST_LOG_MIX_HEADER_MEMBER'
+            hash.mix(static_cast< uint32_t >(offsetof(header, name)))
+                                             ^                ~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/stddef.h:120:24: note: expanded from macro 'offsetof'
+#define offsetof(t, d) __builtin_offsetof(t, d)
+                       ^                     ~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:164:13: warning: offset of on non-POD type 'boost::log::v2s_mt_posix::ipc::reliable_message_queue::implementation::header' [-Winvalid-offsetof]
+            BOOST_LOG_MIX_HEADER_MEMBER(m_block_size);
+            ^                           ~~~~~~~~~~~~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:158:46: note: expanded from macro 'BOOST_LOG_MIX_HEADER_MEMBER'
+            hash.mix(static_cast< uint32_t >(offsetof(header, name)))
+                                             ^                ~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/stddef.h:120:24: note: expanded from macro 'offsetof'
+#define offsetof(t, d) __builtin_offsetof(t, d)
+                       ^                     ~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:165:13: warning: offset of on non-POD type 'boost::log::v2s_mt_posix::ipc::reliable_message_queue::implementation::header' [-Winvalid-offsetof]
+            BOOST_LOG_MIX_HEADER_MEMBER(m_mutex);
+            ^                           ~~~~~~~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:158:46: note: expanded from macro 'BOOST_LOG_MIX_HEADER_MEMBER'
+            hash.mix(static_cast< uint32_t >(offsetof(header, name)))
+                                             ^                ~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/stddef.h:120:24: note: expanded from macro 'offsetof'
+#define offsetof(t, d) __builtin_offsetof(t, d)
+                       ^                     ~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:166:13: warning: offset of on non-POD type 'boost::log::v2s_mt_posix::ipc::reliable_message_queue::implementation::header' [-Winvalid-offsetof]
+            BOOST_LOG_MIX_HEADER_MEMBER(m_nonempty_queue);
+            ^                           ~~~~~~~~~~~~~~~~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:158:46: note: expanded from macro 'BOOST_LOG_MIX_HEADER_MEMBER'
+            hash.mix(static_cast< uint32_t >(offsetof(header, name)))
+                                             ^                ~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/stddef.h:120:24: note: expanded from macro 'offsetof'
+#define offsetof(t, d) __builtin_offsetof(t, d)
+                       ^                     ~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:167:13: warning: offset of on non-POD type 'boost::log::v2s_mt_posix::ipc::reliable_message_queue::implementation::header' [-Winvalid-offsetof]
+            BOOST_LOG_MIX_HEADER_MEMBER(m_nonfull_queue);
+            ^                           ~~~~~~~~~~~~~~~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:158:46: note: expanded from macro 'BOOST_LOG_MIX_HEADER_MEMBER'
+            hash.mix(static_cast< uint32_t >(offsetof(header, name)))
+                                             ^                ~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/stddef.h:120:24: note: expanded from macro 'offsetof'
+#define offsetof(t, d) __builtin_offsetof(t, d)
+                       ^                     ~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:168:13: warning: offset of on non-POD type 'boost::log::v2s_mt_posix::ipc::reliable_message_queue::implementation::header' [-Winvalid-offsetof]
+            BOOST_LOG_MIX_HEADER_MEMBER(m_size);
+            ^                           ~~~~~~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:158:46: note: expanded from macro 'BOOST_LOG_MIX_HEADER_MEMBER'
+            hash.mix(static_cast< uint32_t >(offsetof(header, name)))
+                                             ^                ~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/stddef.h:120:24: note: expanded from macro 'offsetof'
+#define offsetof(t, d) __builtin_offsetof(t, d)
+                       ^                     ~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:169:13: warning: offset of on non-POD type 'boost::log::v2s_mt_posix::ipc::reliable_message_queue::implementation::header' [-Winvalid-offsetof]
+            BOOST_LOG_MIX_HEADER_MEMBER(m_put_pos);
+            ^                           ~~~~~~~~~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:158:46: note: expanded from macro 'BOOST_LOG_MIX_HEADER_MEMBER'
+            hash.mix(static_cast< uint32_t >(offsetof(header, name)))
+                                             ^                ~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/stddef.h:120:24: note: expanded from macro 'offsetof'
+#define offsetof(t, d) __builtin_offsetof(t, d)
+                       ^                     ~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:170:13: warning: offset of on non-POD type 'boost::log::v2s_mt_posix::ipc::reliable_message_queue::implementation::header' [-Winvalid-offsetof]
+            BOOST_LOG_MIX_HEADER_MEMBER(m_get_pos);
+            ^                           ~~~~~~~~~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:158:46: note: expanded from macro 'BOOST_LOG_MIX_HEADER_MEMBER'
+            hash.mix(static_cast< uint32_t >(offsetof(header, name)))
+                                             ^                ~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/stddef.h:120:24: note: expanded from macro 'offsetof'
+#define offsetof(t, d) __builtin_offsetof(t, d)
+                       ^                     ~
+11 warnings generated.
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/spirit_encoding.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/parser_utils.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/syslog_backend.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/date_time_format_parser.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/init_from_stream.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/format_parser.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/named_scope_format_parser.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/text_file_backend.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/posix/object_name.o
+darwin.archive bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/libboost_log-mt-d-x64.a
+common.copy /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Build/Boost/__log/Source/stage/lib/libboost_log-mt-d-x64.a
+darwin.compile.c++ bin.v2/libs/thread/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/pthread/once.o
+darwin.compile.c++ bin.v2/libs/thread/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/future.o
+darwin.archive bin.v2/libs/thread/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/libboost_thread-mt-d-x64.a
+common.copy /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Build/Boost/__log/Source/stage/lib/libboost_thread-mt-d-x64.a
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/cpp_regex_traits.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/settings_parser.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/filter_parser.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/formatter_parser.o
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/icu.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/default_formatter_factory.o
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/instances.o
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/fileiter.o
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/regex_debug.o
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/regex_raw_buffer.o
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/static_mutex.o
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/w32_regex_traits.o
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/regex_traits_defaults.o
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/regex.o
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/winstances.o
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/wc_regex_traits.o
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/usinstances.o
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/cregex.o
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/codecvt_error_category.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/matches_relation_factory.o
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/posix_api.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/default_filter_factory.o
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/path_traits.o
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/windows_file_codecvt.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/init_from_settings.o
+darwin.archive bin.v2/libs/log/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/libboost_log_setup-mt-d-x64.a
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/portability.o
+common.copy /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Build/Boost/__log/Source/stage/lib/libboost_log_setup-mt-d-x64.a
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/wide_posix_api.o
+darwin.archive bin.v2/libs/regex/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/libboost_regex-mt-d-x64.a
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: bin.v2/libs/regex/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/icu.o has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: bin.v2/libs/regex/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/instances.o has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: bin.v2/libs/regex/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/regex_debug.o has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: bin.v2/libs/regex/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/w32_regex_traits.o has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: bin.v2/libs/regex/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/winstances.o has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: bin.v2/libs/regex/build/darwin-4.2.1/debug/link-static/threading-multi/visibility-hidden/usinstances.o has no symbols
+common.copy /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Build/Boost/__log/Source/stage/lib/libboost_regex-mt-d-x64.a
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/utf8_codecvt_facet.o
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/path.o
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/unique_path.o
+darwin.compile.c++ bin.v2/libs/date_time/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/gregorian/greg_weekday.o
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/icu.o
+darwin.compile.c++ bin.v2/libs/date_time/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/gregorian/date_generators.o
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/instances.o
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/operations.o
+darwin.archive bin.v2/libs/filesystem/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/libboost_filesystem-mt-x64.a
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: bin.v2/libs/filesystem/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/windows_file_codecvt.o has no symbols
+common.copy /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Build/Boost/__log/Source/stage/lib/libboost_filesystem-mt-x64.a
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/cpp_regex_traits.o
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/regex_debug.o
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/c_regex_traits.o
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/regex_raw_buffer.o
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/static_mutex.o
+...on 200th target...
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/w32_regex_traits.o
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/fileiter.o
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/winstances.o
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/regex_traits_defaults.o
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/usinstances.o
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/regex.o
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/wc_regex_traits.o
+darwin.compile.c++ bin.v2/libs/thread/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/pthread/once.o
+darwin.compile.c++ bin.v2/libs/date_time/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/gregorian/greg_month.o
+darwin.archive bin.v2/libs/date_time/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/libboost_date_time-mt-x64.a
+common.copy /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Build/Boost/__log/Source/stage/lib/libboost_date_time-mt-x64.a
+darwin.compile.c++ bin.v2/libs/thread/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/future.o
+darwin.compile.c++ bin.v2/libs/chrono/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/thread_clock.o
+darwin.compile.c++ bin.v2/libs/chrono/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/chrono.o
+darwin.compile.c++ bin.v2/libs/chrono/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/process_cpu_clocks.o
+darwin.archive bin.v2/libs/chrono/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/libboost_chrono-mt-x64.a
+common.copy /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Build/Boost/__log/Source/stage/lib/libboost_chrono-mt-x64.a
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/attribute_set.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/attribute_name.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/attribute_value_set.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/code_conversion.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/severity_level.o
+darwin.compile.c++ bin.v2/libs/thread/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/pthread/thread.o
+darwin.archive bin.v2/libs/thread/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/libboost_thread-mt-x64.a
+common.copy /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Build/Boost/__log/Source/stage/lib/libboost_thread-mt-x64.a
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/global_logger_storage.o
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/posix_api.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/process_id.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/named_scope.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/process_name.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/default_attribute_names.o
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/wide_posix_api.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/thread_id.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/record_ostream.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/timer.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/core.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/once_block.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/text_ostream_backend.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/text_multifile_backend.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/thread_specific.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/timestamp.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/threadsafe_queue.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/event.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/trivial.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/exceptions.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/permissions.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/default_sink.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/dump.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/spirit_encoding.o
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/cregex.o
+darwin.archive bin.v2/libs/regex/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/libboost_regex-mt-x64.a
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: bin.v2/libs/regex/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/icu.o has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: bin.v2/libs/regex/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/instances.o has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: bin.v2/libs/regex/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/regex_debug.o has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: bin.v2/libs/regex/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/w32_regex_traits.o has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: bin.v2/libs/regex/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/winstances.o has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: bin.v2/libs/regex/build/darwin-4.2.1/release/link-static/threading-multi/visibility-hidden/usinstances.o has no symbols
+common.copy /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Build/Boost/__log/Source/stage/lib/libboost_regex-mt-x64.a
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/posix/ipc_reliable_message_queue.o
+libs/log/src/posix/ipc_reliable_message_queue.cpp:160:13: warning: offset of on non-POD type 'boost::log::v2s_mt_posix::ipc::reliable_message_queue::implementation::header' [-Winvalid-offsetof]
+            BOOST_LOG_MIX_HEADER_MEMBER(m_abi_tag);
+            ^                           ~~~~~~~~~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:158:46: note: expanded from macro 'BOOST_LOG_MIX_HEADER_MEMBER'
+            hash.mix(static_cast< uint32_t >(offsetof(header, name)))
+                                             ^                ~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/stddef.h:120:24: note: expanded from macro 'offsetof'
+#define offsetof(t, d) __builtin_offsetof(t, d)
+                       ^                     ~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:161:13: warning: offset of on non-POD type 'boost::log::v2s_mt_posix::ipc::reliable_message_queue::implementation::header' [-Winvalid-offsetof]
+            BOOST_LOG_MIX_HEADER_MEMBER(m_padding);
+            ^                           ~~~~~~~~~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:158:46: note: expanded from macro 'BOOST_LOG_MIX_HEADER_MEMBER'
+            hash.mix(static_cast< uint32_t >(offsetof(header, name)))
+                                             ^                ~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/stddef.h:120:24: note: expanded from macro 'offsetof'
+#define offsetof(t, d) __builtin_offsetof(t, d)
+                       ^                     ~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:162:13: warning: offset of on non-POD type 'boost::log::v2s_mt_posix::ipc::reliable_message_queue::implementation::header' [-Winvalid-offsetof]
+            BOOST_LOG_MIX_HEADER_MEMBER(m_ref_count);
+            ^                           ~~~~~~~~~~~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:158:46: note: expanded from macro 'BOOST_LOG_MIX_HEADER_MEMBER'
+            hash.mix(static_cast< uint32_t >(offsetof(header, name)))
+                                             ^                ~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/stddef.h:120:24: note: expanded from macro 'offsetof'
+#define offsetof(t, d) __builtin_offsetof(t, d)
+                       ^                     ~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:163:13: warning: offset of on non-POD type 'boost::log::v2s_mt_posix::ipc::reliable_message_queue::implementation::header' [-Winvalid-offsetof]
+            BOOST_LOG_MIX_HEADER_MEMBER(m_capacity);
+            ^                           ~~~~~~~~~~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:158:46: note: expanded from macro 'BOOST_LOG_MIX_HEADER_MEMBER'
+            hash.mix(static_cast< uint32_t >(offsetof(header, name)))
+                                             ^                ~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/stddef.h:120:24: note: expanded from macro 'offsetof'
+#define offsetof(t, d) __builtin_offsetof(t, d)
+                       ^                     ~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:164:13: warning: offset of on non-POD type 'boost::log::v2s_mt_posix::ipc::reliable_message_queue::implementation::header' [-Winvalid-offsetof]
+            BOOST_LOG_MIX_HEADER_MEMBER(m_block_size);
+            ^                           ~~~~~~~~~~~~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:158:46: note: expanded from macro 'BOOST_LOG_MIX_HEADER_MEMBER'
+            hash.mix(static_cast< uint32_t >(offsetof(header, name)))
+                                             ^                ~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/stddef.h:120:24: note: expanded from macro 'offsetof'
+#define offsetof(t, d) __builtin_offsetof(t, d)
+                       ^                     ~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:165:13: warning: offset of on non-POD type 'boost::log::v2s_mt_posix::ipc::reliable_message_queue::implementation::header' [-Winvalid-offsetof]
+            BOOST_LOG_MIX_HEADER_MEMBER(m_mutex);
+            ^                           ~~~~~~~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:158:46: note: expanded from macro 'BOOST_LOG_MIX_HEADER_MEMBER'
+            hash.mix(static_cast< uint32_t >(offsetof(header, name)))
+                                             ^                ~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/stddef.h:120:24: note: expanded from macro 'offsetof'
+#define offsetof(t, d) __builtin_offsetof(t, d)
+                       ^                     ~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:166:13: warning: offset of on non-POD type 'boost::log::v2s_mt_posix::ipc::reliable_message_queue::implementation::header' [-Winvalid-offsetof]
+            BOOST_LOG_MIX_HEADER_MEMBER(m_nonempty_queue);
+            ^                           ~~~~~~~~~~~~~~~~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:158:46: note: expanded from macro 'BOOST_LOG_MIX_HEADER_MEMBER'
+            hash.mix(static_cast< uint32_t >(offsetof(header, name)))
+                                             ^                ~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/stddef.h:120:24: note: expanded from macro 'offsetof'
+#define offsetof(t, d) __builtin_offsetof(t, d)
+                       ^                     ~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:167:13: warning: offset of on non-POD type 'boost::log::v2s_mt_posix::ipc::reliable_message_queue::implementation::header' [-Winvalid-offsetof]
+            BOOST_LOG_MIX_HEADER_MEMBER(m_nonfull_queue);
+            ^                           ~~~~~~~~~~~~~~~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:158:46: note: expanded from macro 'BOOST_LOG_MIX_HEADER_MEMBER'
+            hash.mix(static_cast< uint32_t >(offsetof(header, name)))
+                                             ^                ~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/stddef.h:120:24: note: expanded from macro 'offsetof'
+#define offsetof(t, d) __builtin_offsetof(t, d)
+                       ^                     ~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:168:13: warning: offset of on non-POD type 'boost::log::v2s_mt_posix::ipc::reliable_message_queue::implementation::header' [-Winvalid-offsetof]
+            BOOST_LOG_MIX_HEADER_MEMBER(m_size);
+            ^                           ~~~~~~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:158:46: note: expanded from macro 'BOOST_LOG_MIX_HEADER_MEMBER'
+            hash.mix(static_cast< uint32_t >(offsetof(header, name)))
+                                             ^                ~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/stddef.h:120:24: note: expanded from macro 'offsetof'
+#define offsetof(t, d) __builtin_offsetof(t, d)
+                       ^                     ~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:169:13: warning: offset of on non-POD type 'boost::log::v2s_mt_posix::ipc::reliable_message_queue::implementation::header' [-Winvalid-offsetof]
+            BOOST_LOG_MIX_HEADER_MEMBER(m_put_pos);
+            ^                           ~~~~~~~~~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:158:46: note: expanded from macro 'BOOST_LOG_MIX_HEADER_MEMBER'
+            hash.mix(static_cast< uint32_t >(offsetof(header, name)))
+                                             ^                ~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/stddef.h:120:24: note: expanded from macro 'offsetof'
+#define offsetof(t, d) __builtin_offsetof(t, d)
+                       ^                     ~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:170:13: warning: offset of on non-POD type 'boost::log::v2s_mt_posix::ipc::reliable_message_queue::implementation::header' [-Winvalid-offsetof]
+            BOOST_LOG_MIX_HEADER_MEMBER(m_get_pos);
+            ^                           ~~~~~~~~~
+libs/log/src/posix/ipc_reliable_message_queue.cpp:158:46: note: expanded from macro 'BOOST_LOG_MIX_HEADER_MEMBER'
+            hash.mix(static_cast< uint32_t >(offsetof(header, name)))
+                                             ^                ~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include/stddef.h:120:24: note: expanded from macro 'offsetof'
+#define offsetof(t, d) __builtin_offsetof(t, d)
+                       ^                     ~
+11 warnings generated.
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/dump_ssse3.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/parser_utils.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/format_parser.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/date_time_format_parser.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/posix/object_name.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/named_scope_format_parser.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/init_from_stream.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/syslog_backend.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/text_file_backend.o
+darwin.archive bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/libboost_log-mt-x64.a
+common.copy /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Build/Boost/__log/Source/stage/lib/libboost_log-mt-x64.a
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/filter_parser.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/formatter_parser.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/default_formatter_factory.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/settings_parser.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/default_filter_factory.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/init_from_settings.o
+darwin.compile.c++ bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/matches_relation_factory.o
+darwin.archive bin.v2/libs/log/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/libboost_log_setup-mt-x64.a
+common.copy /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Build/Boost/__log/Source/stage/lib/libboost_log_setup-mt-x64.a
+...updated 288 targets...
+
+
+The Boost C++ Libraries were successfully built!
+
+The following directory should be added to compiler include paths:
+
+    /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Build/Boost/__log/Source
+
+The following directory should be added to linker library paths:
+
+    /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Build/Boost/__log/Source/stage/lib
+
+[ 87%] Performing install step for 'Boost-log'
+Performing configuration checks
+
+    - default address-model    : 64-bit
+    - default architecture     : x86
+    - native-atomic-int32-supported : yes
+    - native-syslog-supported  : yes
+    - pthread-supports-robust-mutexes : no
+    - has_icu builds           : no
+    - lockfree boost::atomic_flag : yes
+    - compiler-supports-ssse3  : yes
+    - compiler-supports-avx2   : no
+
+Component configuration:
+
+    - atomic                   : not building
+    - chrono                   : not building
+    - container                : not building
+    - context                  : not building
+    - contract                 : not building
+    - coroutine                : not building
+    - date_time                : not building
+    - exception                : not building
+    - fiber                    : not building
+    - filesystem               : not building
+    - graph                    : not building
+    - graph_parallel           : not building
+    - headers                  : not building
+    - iostreams                : not building
+    - locale                   : not building
+    - log                      : building
+    - math                     : not building
+    - mpi                      : not building
+    - program_options          : not building
+    - python                   : not building
+    - random                   : not building
+    - regex                    : not building
+    - serialization            : not building
+    - stacktrace               : not building
+    - system                   : not building
+    - test                     : not building
+    - thread                   : not building
+    - timer                    : not building
+    - type_erasure             : not building
+    - wave                     : not building
+
+[100%] Completed 'Boost-log'
+[100%] Built target Boost-log
+-- [hunter] Build step successful (dir: /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Build/Boost/__log)
+-- [hunter] Cache saved: /Users/macbook/.hunter/_Base/Cache/raw/41a6bdd891fab81e905075ca1193d97de2b5a98d.tar.bz2
+-- [hunter] BOOST_ROOT: /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Install (ver.: 1.70.0-p0)
+-- [hunter] BOOST_ROOT: /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Install (ver.: 1.70.0-p0)
+-- [hunter] Building Boost (component: thread)
+loading initial cache file /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/cache.cmake
+loading initial cache file /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Build/Boost/__thread/args.cmake
+-- The C compiler identification is AppleClang 10.0.1.10010046
+-- The CXX compiler identification is AppleClang 10.0.1.10010046
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -- works
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -- works
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Build/Boost/__thread/Build
+Scanning dependencies of target Boost-thread
+[ 12%] Creating directories for 'Boost-thread'
+[ 25%] Performing download step (download, verify and extract) for 'Boost-thread'
+-- verifying file...
+       file='/Users/macbook/.hunter/_Base/Download/Boost/1.70.0-p0/e6bb97b/v1.70.0-p0.tar.gz'
+-- File already exists and hash match (skip download):
+  file='/Users/macbook/.hunter/_Base/Download/Boost/1.70.0-p0/e6bb97b/v1.70.0-p0.tar.gz'
+  SHA1='e6bb97b5109c7c15ea459cf2b1a9d52cbf88a89e'
+-- extracting...
+     src='/Users/macbook/.hunter/_Base/Download/Boost/1.70.0-p0/e6bb97b/v1.70.0-p0.tar.gz'
+     dst='/Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Build/Boost/__thread/Source'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 37%] No patch step for 'Boost-thread'
+[ 50%] Performing update step for 'Boost-thread'
+[ 62%] Performing configure step for 'Boost-thread'
+Dummy patch command
+Building Boost.Build engine with toolset darwin... tools/build/src/engine/bin.macosxx86_64/b2
+Detecting Python version... 2.7
+Detecting Python root... /System/Library/Frameworks/Python.framework/Versions/2.7
+Unicode/ICU support for Boost.Regex?... not found.
+Generating Boost.Build configuration in project-config.jam for darwin...
+
+Bootstrapping is done. To build, run:
+
+    ./b2
+    
+To generate header files, run:
+
+    ./b2 headers
+
+To adjust configuration, edit 'project-config.jam'.
+Further information:
+
+   - Command line help:
+     ./b2 --help
+     
+   - Getting started guide: 
+     http://www.boost.org/more/getting_started/unix-variants.html
+     
+   - Boost.Build documentation:
+     http://www.boost.org/build/
+
+[ 75%] Performing build step for 'Boost-thread'
+Performing configuration checks
+
+    - default address-model    : 64-bit
+    - default architecture     : x86
+
+Building the Boost C++ Libraries.
+
+
+    - lockfree boost::atomic_flag : yes
+
+Component configuration:
+
+    - atomic                   : not building
+    - chrono                   : not building
+    - container                : not building
+    - context                  : not building
+    - contract                 : not building
+    - coroutine                : not building
+    - date_time                : not building
+    - exception                : not building
+    - fiber                    : not building
+    - filesystem               : not building
+    - graph                    : not building
+    - graph_parallel           : not building
+    - headers                  : not building
+    - iostreams                : not building
+    - locale                   : not building
+    - log                      : not building
+    - math                     : not building
+    - mpi                      : not building
+    - program_options          : not building
+    - python                   : not building
+    - random                   : not building
+    - regex                    : not building
+    - serialization            : not building
+    - stacktrace               : not building
+    - system                   : not building
+    - test                     : not building
+    - thread                   : building
+    - timer                    : not building
+    - type_erasure             : not building
+    - wave                     : not building
+
+...patience...
+...found 1277 targets...
+...updating 25 targets...
+darwin.compile.c++ bin.v2/libs/thread/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/pthread/once.o
+darwin.compile.c++ bin.v2/libs/thread/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/pthread/once.o
+darwin.compile.c++ bin.v2/libs/thread/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/future.o
+darwin.compile.c++ bin.v2/libs/thread/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/future.o
+darwin.compile.c++ bin.v2/libs/thread/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/pthread/thread.o
+darwin.archive bin.v2/libs/thread/build/darwin-4.2.1/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/libboost_thread-mt-d-x64.a
+common.copy /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Build/Boost/__thread/Source/stage/lib/libboost_thread-mt-d-x64.a
+darwin.compile.c++ bin.v2/libs/thread/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/pthread/thread.o
+darwin.archive bin.v2/libs/thread/build/darwin-4.2.1/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/libboost_thread-mt-x64.a
+common.copy /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Build/Boost/__thread/Source/stage/lib/libboost_thread-mt-x64.a
+...updated 25 targets...
+
+
+The Boost C++ Libraries were successfully built!
+
+The following directory should be added to compiler include paths:
+
+    /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Build/Boost/__thread/Source
+
+The following directory should be added to linker library paths:
+
+    /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Build/Boost/__thread/Source/stage/lib
+
+[ 87%] Performing install step for 'Boost-thread'
+Performing configuration checks
+
+    - default address-model    : 64-bit
+    - default architecture     : x86
+    - lockfree boost::atomic_flag : yes
+
+Component configuration:
+
+    - atomic                   : not building
+    - chrono                   : not building
+    - container                : not building
+    - context                  : not building
+    - contract                 : not building
+    - coroutine                : not building
+    - date_time                : not building
+    - exception                : not building
+    - fiber                    : not building
+    - filesystem               : not building
+    - graph                    : not building
+    - graph_parallel           : not building
+    - headers                  : not building
+    - iostreams                : not building
+    - locale                   : not building
+    - log                      : not building
+    - math                     : not building
+    - mpi                      : not building
+    - program_options          : not building
+    - python                   : not building
+    - random                   : not building
+    - regex                    : not building
+    - serialization            : not building
+    - stacktrace               : not building
+    - system                   : not building
+    - test                     : not building
+    - thread                   : building
+    - timer                    : not building
+    - type_erasure             : not building
+    - wave                     : not building
+
+[100%] Completed 'Boost-thread'
+[100%] Built target Boost-thread
+-- [hunter] Build step successful (dir: /Users/macbook/.hunter/_Base/9a3594a/7e73122/c351cc1/Build/Boost/__thread)
+-- [hunter] Cache saved: /Users/macbook/.hunter/_Base/Cache/raw/912a426d1d528af4b427126238223ab490667c3f.tar.bz2
+-- Boost version: 1.70.0
+-- Found the following Boost libraries:
+--   filesystem
+--   log
+--   log_setup
+--   system
+--   thread
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Looking for clock_gettime
+-- Looking for clock_gettime - not found
+-- Looking for clock_gettime in rt
+-- Looking for clock_gettime in rt - not found
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/macbook/lab-06-multithreads/cmake-build-debug
